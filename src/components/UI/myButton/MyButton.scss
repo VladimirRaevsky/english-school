@@ -1,0 +1,29 @@
+.my-button {
+  background: linear-gradient(213.88deg, #b1e2ff -67.78%, #68c7ff 175.48%);
+  border-radius: 25px;
+  padding: 16px 35px 16px 60px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  @media (max-width: 769px) {
+    width: 300px;
+  }
+}
+
+.my-button:hover {
+  background: linear-gradient(213.88deg, #c6eaff -67.78%, #81d0ff 175.48%);
+  box-shadow: 0px 0px 25px rgba(146, 214, 255, 0.5);
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+.click {
+  background: linear-gradient(213.88deg, #86d2ff -67.78%, #47bbff 175.48%);
+}

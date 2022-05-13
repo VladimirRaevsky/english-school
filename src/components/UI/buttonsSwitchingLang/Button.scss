@@ -1,0 +1,26 @@
+.button-box {
+  margin: 0px 10px;
+
+  .button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    color: #7a7a7a;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .button.active {
+    color: #52bfff;
+  }
+
+  .button:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .button:last-child {
+    margin-right: 0;
+  }
+}

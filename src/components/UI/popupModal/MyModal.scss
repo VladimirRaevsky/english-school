@@ -1,0 +1,67 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+  background: rgba(218, 228, 234, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -100;
+  overflow-y: scroll;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  .content {
+    position: relative;
+    cursor: auto;
+
+    &__close-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: -11px;
+      top: -14px;
+
+      @media (max-width: 769px) {
+        display: none;
+      }
+    }
+
+    .popup-menu-header {
+      background: #ffffff;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: flex-end;
+      padding: 6px 10px 6px 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+
+      @media (min-width: 769px) {
+        display: none;
+      }
+
+      button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal.active {
+  transition: all 0.5s;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 100;
+}

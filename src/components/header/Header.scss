@@ -1,0 +1,132 @@
+.header {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: trasparent;
+
+  @media (max-width: 899px) {
+    min-height: 60px;
+    height: 60px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1081px) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__button-box {
+    margin: 0px 10px;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    color: #7a7a7a;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &__button.active {
+    color: #52bfff;
+  }
+
+  &__button:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button:last-child {
+    margin-right: 0;
+  }
+
+  &__feedback {
+    padding: 5px 20px 5px 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(82, 191, 255, 0.15);
+    border-radius: 25px;
+    cursor: pointer;
+    color: #023994;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1050px) {
+      align-self: flex-end;
+    }
+
+    img {
+      margin-right: 14px;
+    }
+  }
+}
+
+// .header__container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.header__logo {
+  img {
+    cursor: pointer;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-around;
+
+  li:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  a {
+    color: #7a7a7a;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  li {
+    position: relative;
+    cursor: pointer;
+  }
+
+  li:hover > a {
+    color: #52bfff;
+    transition: all 0.5s;
+  }
+
+  li:hover::after {
+    content: url("../../images/header/pseudoElement.svg");
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    transition: all 0.5s;
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
+  }
+}
+
+/*
+  мобильное – 320px.
+  планшет – 768px.
+  ноутбук – 1440px.
+  настольный компьютер – 1920px.
+*/
