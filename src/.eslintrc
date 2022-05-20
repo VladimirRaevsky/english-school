@@ -3,6 +3,7 @@
   "rules": {
     "no-unused-vars": "warn",
     "no-console": "warn",
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "react/jsx-no-comment-textnodes": "warn"
   }
 }

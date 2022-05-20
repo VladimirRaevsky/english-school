@@ -1,3 +1,4 @@
+@import '../../../styles/variable.scss';
 .my-button {
   background: linear-gradient(213.88deg, #b1e2ff -67.78%, #68c7ff 175.48%);
   border-radius: 25px;
@@ -6,7 +7,7 @@
   font-size: 16px;
   line-height: 15px;
   text-align: center;
-  color: #ffffff;
+  color: $colorWhite;
   outline: none;
   border: 1px solid transparent;
   cursor: pointer;

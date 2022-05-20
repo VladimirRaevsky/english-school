@@ -1,3 +1,4 @@
+@import '../../../styles/variable.scss';
 .button-box {
   margin: 0px 10px;
 
@@ -5,7 +6,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
-    color: #7a7a7a;
+    color: $colorBoulder;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -13,7 +14,7 @@
   }
 
   .button.active {
-    color: #52bfff;
+    color: $colorMalibu;
   }
 
   .button:not(:last-child) {

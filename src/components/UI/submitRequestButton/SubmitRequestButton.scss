@@ -1,10 +1,11 @@
+@import '../../../styles/variable.scss';
 .feedback {
   padding: 5px 20px 5px 5px;
-  background-color: #ffffff;
+  background-color: $colorWhite;
   box-shadow: 0px 0px 25px rgba(82, 191, 255, 0.15);
   border-radius: 25px;
   cursor: pointer;
-  color: #023994;
+  color: $colorSmalt;
   display: flex;
   justify-content: space-between;
   align-items: center;

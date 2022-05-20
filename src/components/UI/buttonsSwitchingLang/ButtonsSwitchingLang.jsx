@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import { useTranslation } from "react-i18next";
-import "./Button.scss";
-import { ActiveBtn } from "../../../context/activeBtn/ActiveBtn";
+import React, { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+import './Button.scss';
+import { ActiveBtn } from '../../../context/ActiveBtn';
 
 const ButtonsSwitchingLang = () => {
   const { i18n } = useTranslation();
@@ -13,27 +13,21 @@ const ButtonsSwitchingLang = () => {
   };
 
   return (
-    <div className={"button-box"}>
+    <div className={'button-box'}>
       <button
         onClick={() => {
           setActiveBtn(!activeBtn);
-          changeLanguage("ru");
+          changeLanguage('ru');
         }}
-        className={`${"button"} ${
-          activeBtn ? "active" : ""
-        }`}
-      >
+        className={`${'button'} ${activeBtn ? 'active' : ''}`}>
         РУС
       </button>
       <button
         onClick={() => {
           setActiveBtn(!activeBtn);
-          changeLanguage("uk");
+          changeLanguage('uk');
         }}
-        className={`${"button"} ${
-          activeBtn ? "" : "active"
-        }`}
-      >
+        className={`${'button'} ${activeBtn ? '' : 'active'}`}>
         UK
       </button>
     </div>

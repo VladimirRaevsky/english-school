@@ -1,5 +1,6 @@
+@import '../../../styles/variable.scss';
 .input {
-  background: #f8fcff;
+  background: $colorAliceBlue;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -23,15 +24,15 @@
 }
 
 input:focus {
-  border: 2px solid #e7eff4;
+  border: 2px solid $colorCatskillWhite;
 }
 
 input::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #98b6c9;
-  background: #f8fcff;
+  color: $colorRockBlue;
+  background: $colorAliceBlue;
   border-radius: 10px;
 }
 

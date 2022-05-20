@@ -1,0 +1,7 @@
+@mixin fz($property: 18px, $default: 16px) {
+  font-size: ($property / $default) + rem;
+}
+
+@mixin lh($property: 18px, $default: 16px) {
+  line-height: ($property / $default) + rem;
+}

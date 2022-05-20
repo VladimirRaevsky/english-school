@@ -1,2 +1,54 @@
 .main-section {
+  max-width: 1440px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-position: center;
+    }
+  }
+
+  &__container {
+    width: 1160px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 200px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__slides {
+    max-width: 721px;
+    height: 321px;
+    background-color: rgb(255, 79, 79);
+  }
+
+  .slides {
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .slide {
+      min-width: 100%;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }
